@@ -3,6 +3,10 @@ const INPUT_MESSAGE = Object.freeze({
   count: "시도할 횟수는 몇 회인가요?",
 });
 
+const OUTPUT_MESSAGE = Object.freeze({
+  result: "실행 결과",
+});
+
 const ERROR_MESSAGE = Object.freeze({
   carNameError: "[ERROR] 이름은 5자 이하로 적어주세요.",
   numberError: "[ERROR] 숫자가 잘못된 형식입니다.",
@@ -14,4 +18,4 @@ const RANDOM_NUMBER = Object.freeze({
   minNumber: 4,
 });
 
-export { INPUT_MESSAGE, ERROR_MESSAGE, RANDOM_NUMBER };
+export { INPUT_MESSAGE, OUTPUT_MESSAGE, ERROR_MESSAGE, RANDOM_NUMBER };
