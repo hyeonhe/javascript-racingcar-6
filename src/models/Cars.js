@@ -2,11 +2,7 @@ class Cars {
   #carNames;
 
   constructor(cars) {
-    this.init(cars);
-  }
-
-  init(carNames) {
-    this.#splitCarNames(carNames);
+    this.#splitCarNames(cars);
   }
 
   #splitCarNames(cars) {
