@@ -7,4 +7,11 @@ const ERROR_MESSAGE = Object.freeze({
   carNameError: "[ERROR] 이름은 5자 이하로 적어주세요.",
   numberError: "[ERROR] 숫자가 잘못된 형식입니다.",
 });
-export { INPUT_MESSAGE, ERROR_MESSAGE };
+
+const RANDOM_NUMBER = Object.freeze({
+  minRange: 0,
+  maxRange: 9,
+  minNumber: 4,
+});
+
+export { INPUT_MESSAGE, ERROR_MESSAGE, RANDOM_NUMBER };
