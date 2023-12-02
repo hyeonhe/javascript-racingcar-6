@@ -13,6 +13,7 @@ class CarController {
     const carForwards = new Array(carNames.length).fill(0);
     OutputView.printResult();
     this.playRounds(counts, carNames, carForwards);
+    this.printWinners(carNames, carForwards);
   }
 
   async getCarNames() {
@@ -48,6 +49,18 @@ class CarController {
       const dashed = "-".repeat(carForwards[i]);
       OutputView.printCarStatus(car, dashed);
     });
+  }
+
+  printWinners(carNames, carForwards) {
+    const maxNumber = Math.max(...carForwards);
+    const winners = [];
+    carForwards.forEach((v, i) => {
+      if (maxNumber === v) {
+        winners.push(carNames[i]);
+      }
+    });
+
+    OutputView.printWinners(winners);
   }
 }
 
