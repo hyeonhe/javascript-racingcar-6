@@ -1,3 +1,5 @@
+import { ERROR_MESSAGE } from "../constants/constant";
+
 class Cars {
   #carNames;
 
@@ -13,7 +15,7 @@ class Cars {
   #isValidCarNames(carNames) {
     carNames.forEach((car) => {
       if (car.length > 5 || car.length < 1) {
-        throw new Error("[ERROR] 이름은 5자 이하로 적어주세요.");
+        throw new Error(ERROR_MESSAGE.carNameError);
       }
     });
 
